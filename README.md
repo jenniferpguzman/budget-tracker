@@ -7,6 +7,6 @@ Once you have your income/expenses and budget you can clear the values by pressi
 The styling for this budget tracker was used using SASS, adding colors to create a gradient for the background of the UI. 
 Only using two main colors for the texts/buttons. 
 # JavaScript
-Using JavaScript I created classes and used methods to add income.expenses and clear the values.
+Using JavaScript I created classes and used methods to add income/expenses and clear the values.
 I used eventlisteners that way when you clicked on the buttons it will add the values/ clear the values. 
 Also adding both income and expenses into list by using appendChild().
