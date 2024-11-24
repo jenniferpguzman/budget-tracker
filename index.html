@@ -8,14 +8,48 @@
 </head>
 <body>
     <main class="big-budget-container">
-        <div class="budget-header">
-            <h1>Jennifers Budget Tracker</h1>
+        <h1>Jennifers Budget Tracker</h1>
         <div class="budget-tracker">
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
+            <h2>Income</h2>
+            <div class="income">
+                <label for="income-description">Description</label>
+                <input type="text" id="income-description" placeholder="salary">
+            </div>
+            <div class="income">
+                <label for="income-amount">Amount</label>
+                <input type="text" id="income-amount" placeholder="100">
+            </div>
+            <div class="buttons">
+            <button id="add-income-btn">Add Income</button>
+            </div>
+            <div id="income-list" class="item-list">
+            </div>
         </div>
+        <div class="budget-tracker">
+            <h2>Expenses</h2>
+            <div class="expenses">
+                <label for="expenses-description">Description</label>
+                <input type="text" id="expenses-description" placeholder="Rent">
+            </div>
+            <div class="expenses">
+                <label for="expenses-amount">Amount</label>
+                <input type="text" id="expenses-amount" placeholder="100">
+            </div>
+            <div class="buttons">
+                <button id="add-expenses-btn">Add Expenses</button>
+                </div>
+                <div id="expenses-list" class="item-list">
+                </div>
+        </div>
+        <div class="summary">
+            <p>Total Income: <span id="total-income">0</span></p>
+            <p>Total Expenses: <span id="total-expenses">0</span></p>
+            <p>Balance: <span id="balance">0</span></p>
+        </div>
+        <div class="clear-button">
+            <button onclick="budgetTracker.clearAll()">Clear All</button>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
